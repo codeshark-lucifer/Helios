@@ -1,0 +1,38 @@
+# PlatformIO build artifacts & local library cache
+.pio/
+
+# Machine-specific VS Code paths & IntelliSense databases
+.vscode/*
+!.vscode/extensions.json
+*.code-workspace
+
+# Compiled C/C++ object & binary files
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# CMake / Make artifacts (if used alongside PlatformIO)
+build/
+cmake-build-*/
+
+# Environment secrets & local credentials (e.g., Wi-Fi SSID/passwords in headers)
+.env
+.env.*
+include/secrets.h
+src/secrets.h
+
+# OS & editor temporary files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
