@@ -10,6 +10,8 @@
             "includePath": [
                 "D:/Program Education/c++/Helios/include",
                 "D:/Program Education/c++/Helios/src",
+                "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/WiFi/src",
+                "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/Network/src",
                 "D:/Program Education/c++/Helios/.pio/libdeps/esp32-s3-devkitm-1/RF24",
                 "D:/Program Education/c++/Helios/.pio/libdeps/esp32-s3-devkitm-1/RF24/utility",
                 "D:/Program Education/c++/Helios/.pio/libdeps/esp32-s3-devkitm-1/Adafruit SSD1306",
@@ -434,7 +436,6 @@
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/LittleFS/src",
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/Matter/src",
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/NetBIOS/src",
-                "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/Network/src",
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/NetworkClientSecure/src",
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/OpenThread/src",
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/PPP/src",
@@ -448,7 +449,6 @@
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/USB/src",
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/Update/src",
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                 "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/Zigbee/src",
                 ""
@@ -458,6 +458,8 @@
                 "path": [
                     "D:/Program Education/c++/Helios/include",
                     "D:/Program Education/c++/Helios/src",
+                    "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/WiFi/src",
+                    "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/Network/src",
                     "D:/Program Education/c++/Helios/.pio/libdeps/esp32-s3-devkitm-1/RF24",
                     "D:/Program Education/c++/Helios/.pio/libdeps/esp32-s3-devkitm-1/RF24/utility",
                     "D:/Program Education/c++/Helios/.pio/libdeps/esp32-s3-devkitm-1/Adafruit SSD1306",
@@ -882,7 +884,6 @@
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/LittleFS/src",
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/Matter/src",
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/NetBIOS/src",
-                    "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/Network/src",
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/NetworkClientSecure/src",
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/OpenThread/src",
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/PPP/src",
@@ -896,7 +897,6 @@
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/USB/src",
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/Update/src",
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                    "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                     "D:/Dev/PlatformIO/packages/framework-arduinoespressif32/libraries/Zigbee/src",
                     ""

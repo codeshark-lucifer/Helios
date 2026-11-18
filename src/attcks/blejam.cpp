@@ -1,4 +1,5 @@
 #include "attacks/blejam.h"
+#include "utils/display.h"
 
 const uint8_t BLE_ADV_TO_NRF[] = {2, 26, 80};
 #define BLE_ADV_COUNT (sizeof(BLE_ADV_TO_NRF) / sizeof(BLE_ADV_TO_NRF[0]))
@@ -34,6 +35,11 @@ void start_blejam()
     radio.rf2.setChannel(BLE_ADV_TO_NRF[1]);
     radio.rf2.testCarrier();
     delay(200);
+
+    display.clearDisplay();
+    display.setCursor(0, 15);
+    display.println(F("BLEJAM..."));
+    display.display();
 }
 
 void stop_blejam()
