@@ -1,26 +1,31 @@
+# Helios
 
-OLED (I2C):
-- VCC : 3V3, works at 3.3V
-- GND : GND, Common ground
-- SDA : GPIO 8, Default ESP32-S3 I2C | SDA
-- SCL : GPIO 9, Default ESP32-S3 I2C | SCL
-- SCK (Shared SPI Bus): GPIO 12, Hardware SPI Clock (FSPI)
-** note ** : SCK OLED Shared with nRF24
+Helios is firmware for an ESP32-S3 with an SSD1306 OLED, a five-button
+matrix, and two nRF24-compatible radios. The current menu includes a routine
+that transmits interference intended to disrupt nearby wireless devices.
 
-nRF24L01 #1:
-- MISO: GPIO 13, Hardware SPI MISO
-- MOSI: GPIO 11, Hardware SPI MOSI
-- CE: GPIO 10, Radio Chip Enable
-- CSN: GPIO 14, Radio SPI Chip Select
-** note ** : nRF24 #1 VCC / GND (Nerver 5V! Use dedicated 3.3V regulator + capacitor)
+## Safety and legal notice
 
-nRF24L01 #2:
-- CE: GPIO 15, Radio Chip Enable
-- CSN: GPIO 16, Radio SPI Chip Select
-** note ** : nRF24 #2 VCC / GND (Nerver 5V! Share commmon GND with ESP32-S3)
+Radio interference can prevent nearby devices from communicating and may be
+illegal. Do not use this firmware to disrupt devices or networks. This README
+intentionally does not include radio wiring, flashing, or operating
+instructions. For a benign project, replace the transmit routine with a
+passive, receive-only feature and verify its behavior in a controlled setting.
 
-3 Push Buttons:
-- UP: GPIO 4, INPUT_PULLUP
-- UP: GPIO 5, INPUT_PULLUP
-- DOWN: GPIO 6, INPUT_PULLUP
-** tip ** : push buttons have to using delay millis() to prevent extra data sent to board
+## Project layout
+
+- `src/main.cpp` — initializes the display, controls, and radios, and manages
+  the menu/action lifecycle.
+- `src/module/radio.cpp` and `include/module/radio.h` — shared SPI radio
+  initialization and connection checks.
+- `include/utils/display.h` — SSD1306 display initialization.
+- `include/utils/button.h` — scans the five-button matrix and detects presses.
+- `src/attcks/blejam.cpp` and `include/attacks/blejam.h` — radio transmission
+  routine referenced by the menu.
+- `platformio.ini` — PlatformIO board, framework, and library configuration.
+
+## Software components
+
+The project is configured for the `esp32-s3-devkitm-1` board with the Arduino
+framework. Its declared libraries include RF24, Adafruit SSD1306, and Adafruit
+GFX.
